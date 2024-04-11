@@ -13,6 +13,8 @@ function App() {
       <Routes>
       <Route path="/" element={<LandingPage />}></Route>
       <Route path="about" element={<About />}></Route>
+      {/* here four Route add In Future Two Template 1.freshers -->With Photo & Without Photo 2.Experience -->with Photo and Without Photo  */}
+      {/* At This Time Only one Component and Resume Format Suppperted */}
       <Route path="resumemaker" element={<ParentMain/>}></Route>
       
       </Routes>

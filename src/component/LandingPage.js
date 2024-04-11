@@ -2,6 +2,7 @@ import React from "react";
 import img from "../imgs/demoresumeimages.png";
 import img2 from '../imgs/resumebg.png';
 import img3 from '../imgs/userRating.png';
+import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <>
@@ -19,12 +20,13 @@ function LandingPage() {
           >
             Build a new CV in minutes or improve your existing one.
           </p>
-          <button
+          <Link
+            to="resumemaker"
             className="bg-gray-900 py-4  px-10 lg:ms-10 text-white rounded-full font-bold"
             style={{ fontFamily: "poppins" }}
           >
             Create Your CV <i class="ri-arrow-right-line"></i>
-          </button>
+          </Link>
         </div>
         <div className="lg:w-1/2 md:w-2/2 sm:w-full flex justify-center items-center lg:text-center lg:justify-center mb-5 lg:mb-0">
           <img 
@@ -72,13 +74,14 @@ function LandingPage() {
         className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/5 my-2"
     />
 </div>
-
-        <button
-          className="bg-black py-4  px-10  my-4 lg:ms-10 text-white rounded-full font-bold"
+  <br />
+        <Link
+          to="resumemaker"
+          className="bg-black py-4  px-10  my-10 lg:ms-10 text-white rounded-full font-bold"
           style={{ fontFamily: "poppins" }}
         >
           Build Your CV <i class="ri-arrow-right-line"></i>
-        </button>
+        </Link>
       </div>
 
       <div className="w-full bg-gray-100 py-10 text-center">
