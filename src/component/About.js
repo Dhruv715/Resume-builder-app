@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../imgs/resumebg.png';
+import { Link } from "react-router-dom";
 function About() {
   return (
     <>
@@ -20,12 +21,12 @@ function About() {
           >
             Our mission at ResumeBuilder is to empower job-seekers worldwide by providing them with tools and resources to create professional resumes that stand out. We believe that everyone deserves a chance to showcase their skills and experiences effectively, and we're committed to helping individuals achieve their career goals.
           </p>
-          <button
+          {/* <Link to="/"
             className="bg-gray-900 py-4  px-10 lg:ms-10 text-white rounded-full font-bold"
             style={{ fontFamily: "poppins" }}
           >
             Read More <i class="ri-arrow-right-line"></i>
-          </button>
+          </Link> */}
         </div>
         <div className="lg:w-1/2 md:w-2/2 sm:w-full flex justify-center lg:text-center lg:justify-center mb-5 lg:mb-0">
           <img
