@@ -31,7 +31,7 @@ function Choice() {
           <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-sm">Continue With Template 1</button>
         </div>
       </div> */}
-      <h1 className="font-bold text-center sm:px-10 lg:mx-auto text-4xl lg:text-4xl lg:text-center sm:text-5xl md:text-5xl lg:px-10 lg:py-4 md:py-3 sm:py-4 lg:w-4/5" style={{fontFamily:'poppins'}}>1.Select Freasher Resume</h1>
+      <h1 className="font-bold text-center sm:px-10 lg:mx-auto text-4xl lg:text-4xl lg:text-center sm:text-5xl md:text-5xl lg:px-10 lg:py-4 md:py-3 sm:py-4 lg:w-4/5" style={{fontFamily:'poppins'}}>1.Select Freshers Resume</h1>
       <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col justify-center items-center">
       
         <div className="bg-white rounded-sm shadow-md p-4 my-4 mx-2  lg:w-1/4 md:2/4">
