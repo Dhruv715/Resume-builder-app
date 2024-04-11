@@ -12,7 +12,7 @@ function LandingPage() {
             className="font-extrabold text-center text-4xl lg:text-6xl lg:text-left sm:text-5xl md:text-5xl lg:px-10 lg:py-4 md:py-3 sm:py-4"
             style={{ fontFamily: "poppins" }}
           >
-            The CV that gets the job (done)
+            The CV that gets the job
           </h1>
           <p
             className="text-center lg:ps-10 py-5 md:py-10 leading-8 font-medium pe-5 lg:text-left text-gray-400"
