@@ -16,7 +16,7 @@ function Navbar() {
                     <Link to="about" className="menu-item">About</Link>
                 </li>
                 <li className='md:px-2 sm:px-2 cursor-pointer text-gray-300 px-2 '>
-                    <Link to="resumemaker" className="menu-item">Generate Resume <i class="ri-arrow-right-line"></i></Link>
+                    <Link to="/resumemaker" className="menu-item">Generate Resume <i class="ri-arrow-right-line"></i></Link>
                 </li>
                
             </ul>
