@@ -76,7 +76,7 @@ function ParentMain() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col w-full " >
+    <div className="flex  flex-col lg:flex-row md:flex-col sm:flex-col w-full " >
       <Form formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} className="w-full sm:w-full md:w-full lg:w-1/2" />
       <Resume formData={generatedResume} handleDownload={handleDownload} className="w-full sm:w-full md:w-full lg:w-1/2"/>
     </div>

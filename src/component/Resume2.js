@@ -9,7 +9,7 @@ function Resume2({ formData, handleDownload }) {
 
   const isWorkExperienceEmpty = !jobTitle && !companyName && !yearsOfExperience;
   return (
-    <div className="resume-container w-full  sm:w-full md:w-full lg:w-1/2">
+    <div className="resume-container w-full lg:h-screen lg:overflow-auto sm:w-full md:w-full lg:w-1/2">
       {formData && (
         <div className="w-11/12">
           <div id="resumeContent">

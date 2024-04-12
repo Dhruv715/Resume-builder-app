@@ -3,7 +3,7 @@ import React from 'react';
 function Form2({ formData, handleChange, handleSubmit }) {
   return (
     <>
-      <div className='formdata w-full sm:w-full md:w-full lg:w-1/2 bg-gray-800' >
+      <div className='formdata w-full sm:w-full lg:h-screen lg:overflow-auto md:w-full lg:w-1/2 bg-gray-800' >
         <h1 className='text-4xl my-2 py-10 text-white px-4 underline'   style={{fontFamily:'poppins'}}>Resume Details Form</h1>
         <h2 className='text-white px-4 py-2 underline' style={{fontFamily:'poppins',color:'red'}}> * Indicates Required Fields </h2>
         <form onSubmit={handleSubmit}>
