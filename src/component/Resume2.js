@@ -1,6 +1,13 @@
 import React from "react";
 
 function Resume2({ formData, handleDownload }) {
+  if (!formData) {
+    return null; // Return null if formData is null or undefined
+  }
+
+  const { jobTitle, companyName, yearsOfExperience } = formData.workExperience || {};
+
+  const isWorkExperienceEmpty = !jobTitle && !companyName && !yearsOfExperience;
   return (
     <div className="resume-container w-full  sm:w-full md:w-full lg:w-1/2">
       {formData && (
@@ -18,7 +25,7 @@ function Resume2({ formData, handleDownload }) {
                     {formData.personalInformation.firstName}{" "}
                     {formData.personalInformation.lastName}
                   </h1>
-                
+                  
                   <h3 className="semi">
                     <strong>
                       <i class="ri-user-2-fill"></i> &nbsp;&nbsp;Personal
@@ -113,28 +120,27 @@ function Resume2({ formData, handleDownload }) {
                   </p>
                 </div>
                 <hr />
+                  {/* Work Experience */}
+              {!isWorkExperienceEmpty && (
                 <div className="resume-section">
                   <h3 className="semi">
-                    <strong>
-                      {" "}
-                      <i class="ri-file-cloud-line"></i> &nbsp;&nbsp;Work
-                      Experience:
-                    </strong>
+                    <strong><i class="ri-file-cloud-line"></i> &nbsp;&nbsp;Work Experience:</strong>
                   </h3>
                   <p className="semi">
                     <strong>Job Title:</strong>{" "}
-                    {formData.workExperience.jobTitle}
+                    {jobTitle}
                   </p>
                   <p className="semi">
                     <strong>Company Name:</strong>{" "}
-                    {formData.workExperience.companyName}
+                    {companyName}
                   </p>
                   <p className="semi">
                     <strong>Years of Experience:</strong>{" "}
-                    {formData.workExperience.yearsOfExperience}
+                    {yearsOfExperience}
                   </p>
                 </div>
-                <hr />
+              )}
+              <hr />
                 <div className="resume-section">
                   <h3 className="semi">
                     <strong>

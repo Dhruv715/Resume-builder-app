@@ -5,9 +5,10 @@ function Form2({ formData, handleChange, handleSubmit }) {
     <>
       <div className='formdata w-full sm:w-full md:w-full lg:w-1/2 bg-gray-800' >
         <h1 className='text-4xl my-2 py-10 text-white px-4 underline'   style={{fontFamily:'poppins'}}>Resume Details Form</h1>
+        <h2 className='text-white px-4 py-2 underline' style={{fontFamily:'poppins',color:'red'}}> * Indicates Required Fields </h2>
         <form onSubmit={handleSubmit}>
           
-          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Personal Information:</h2>
+          <h2 className='text-white px-4 py-2 underline ' style={{fontFamily:'poppins'}}>*Personal Information:</h2>
           <div className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="firstName" className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>First Name:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' placeholder='First Name' value={formData.personalInformation.firstName} onChange={(e) => handleChange(e, 'personalInformation', 'firstName')} />
@@ -26,7 +27,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Professional Summary */}
           
-          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Professional Summary or Objective:</h2>
+          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>*Professional Summary or Objective:</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="professionalSummary"   className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Professional Objective</label>
           <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:5/5 lg:w-full p-2 me-2' value={formData.professionalSummary.desc} onChange={(e) => handleChange(e, 'professionalSummary','desc')} placeholder='A brief overview of your career goals and professional background.' />
@@ -34,7 +35,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Education */}
           
-          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Education:</h2>
+          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>*Education:</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="degree"  className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Degree:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' value={formData.education.degree} onChange={(e) => handleChange(e, 'education', 'degree')} placeholder='Name of Degree' />
@@ -57,7 +58,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Work Experience */}
           
-          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Work Experience:</h2>
+          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Work Experience: (Optional - for freshers)</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="jobTitle"  className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Job Title:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' value={formData.workExperience.jobTitle} onChange={(e) => handleChange(e, 'workExperience', 'jobTitle')} placeholder='Job Title' />
@@ -72,7 +73,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Skills */}
           
-          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Skills:</h2>
+          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>*Skills:</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="technicalSkills"  className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Technical Skills:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' value={formData.skills.technicalSkills} onChange={(e) => handleChange(e, 'skills', 'technicalSkills')} placeholder='Technical Skills (e.g., Programming Languages)' />
@@ -83,7 +84,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Certifications */}
           
-          <h2 className='text-white px-4 py-10 underline' style={{fontFamily:'poppins'}}>Certifications:</h2>
+          <h2 className='text-white px-4 py-10 underline' style={{fontFamily:'poppins'}}>*Certifications:</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="certificationName"  className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Certification Name:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' value={formData.certifications.certificationName} onChange={(e) => handleChange(e, 'certifications', 'certificationName')} placeholder='Certification Name' />
@@ -98,7 +99,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Languages */}
           
-          <h2 className='text-white px-4 py-10 underline' style={{fontFamily:'poppins'}}>Languages:</h2>
+          <h2 className='text-white px-4 py-10 underline' style={{fontFamily:'poppins'}}>*Languages:</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="languageSpoken"  className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Language Spoken:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' value={formData.languages.languageSpoken} onChange={(e) => handleChange(e, 'languages', 'languageSpoken')} placeholder='Language Spoken' />
@@ -109,7 +110,7 @@ function Form2({ formData, handleChange, handleSubmit }) {
           </div>
           {/* Additional Information */}
           
-          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Additional Information:</h2>
+          <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>*Additional Information:</h2>
           <div  className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="hobbies"  className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Hobbies:</label>
             <input type="text" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' value={formData.additionalInformation.hobbies} onChange={(e) => handleChange(e, 'additionalInformation', 'hobbies')} placeholder='Hobbies' />
