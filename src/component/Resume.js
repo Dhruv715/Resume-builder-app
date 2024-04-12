@@ -8,18 +8,19 @@ function Resume({ formData, handleDownload }) {
           <div id="resumeContent">
             {/* Personal Information */}
 
-            <h1 className=" bg-stone-600 text-white py-6 text-2xl px-10">
+            <h1 className=" bg-stone-400 text-black py-10 text-2xl px-10 text-center " style={{letterSpacing:'2px',textTransform:'uppercase'}}>
+
               {formData.personalInformation.firstName}{" "}
               {formData.personalInformation.lastName}
             </h1>
             <div className="parentdivflexy flex flex-row w-full">
-              <div className="bg-stone-300 flex flex-col w-2/5">
+              <div className="flex flex-col w-1/3">
                 <div className="resume-section">
                   <h3 className="semi">
-                    <i class="ri-user-2-fill"></i> &nbsp;&nbsp;Personal
-                    Information:
+                    <strong><i class="ri-user-2-fill"></i> &nbsp;&nbsp;Personal
+                    Information:</strong>
                   </h3>
-                  <p className="semi">
+                  <p className="semi" >
                     <strong>
                       <i class="ri-phone-fill"></i> &nbsp;&nbsp;
                     </strong>{" "}
@@ -32,10 +33,10 @@ function Resume({ formData, handleDownload }) {
                     {formData.personalInformation.dob}
                   </p>
                 </div>
-                
+                  <hr />
                 <div className="resume-section">
                   <h3 className="semi">
-                    <i class="ri-building-2-fill"></i> &nbsp;&nbsp; Skills:
+                   <strong> <i class="ri-building-2-fill"></i> &nbsp;&nbsp; Skills:</strong>
                   </h3>
                   <p className="semi">
                     <strong>Technical Skills:</strong>{" "}
@@ -45,9 +46,11 @@ function Resume({ formData, handleDownload }) {
                     <strong>Soft Skills:</strong> {formData.skills.softSkills}
                   </p>
                 </div>
-                
+                <hr />
                 <div className="resume-section">
-                  <h3 className="semi">Languages:</h3>
+                  <h3 className="semi">
+                    <strong>Languages:</strong>
+                  </h3>
                   <p className="semi">
                     <strong>Language Spoken:</strong>{" "}
                     {formData.languages.languageSpoken}
@@ -58,21 +61,22 @@ function Resume({ formData, handleDownload }) {
                   </p>
                 </div>
               </div>
-              <div className="Section-two">
+              <div className="Section-two flex flex-col w-2/3">
                 <div className="resume-section">
                   <h3 className="semi">
-                    <i class="ri-profile-line"></i> &nbsp;&nbsp;Professional
-                    Summary:
+                    <strong><i class="ri-profile-line"></i> &nbsp;&nbsp;Professional
+                    Summary:</strong>
                   </h3>
-                  <p className="semi">{formData.professionalSummary.desc}</p>
+                  <p className="semi w-full pe-2">{formData.professionalSummary.desc}</p>
                 </div>
                 {/* Education */}
                
                 {/* 
  */}
+  <hr />
                 <div className="resume-section">
                   <h3 className="semi">
-                    <i class="ri-school-line"></i> &nbsp;&nbsp;Education:
+                   <strong> <i class="ri-school-line"></i> &nbsp;&nbsp;Education:</strong>
                   </h3>
                   <p className="semi">
                     <strong>Degree:</strong> {formData.education.degree}
@@ -93,10 +97,11 @@ function Resume({ formData, handleDownload }) {
                     <strong>GPA:</strong> {formData.education.gpa}
                   </p>
                 </div>
+                <hr/>
                 <div className="resume-section">
                   <h3 className="semi">
-                    <i class="ri-file-cloud-line"></i> &nbsp;&nbsp;Work
-                    Experience:
+                   <strong> <i class="ri-file-cloud-line"></i> &nbsp;&nbsp;Work
+                    Experience:</strong>
                   </h3>
                   <p className="semi">
                     <strong>Job Title:</strong>{" "}
@@ -111,9 +116,10 @@ function Resume({ formData, handleDownload }) {
                     {formData.workExperience.yearsOfExperience}
                   </p>
                 </div>
+                <hr />
                 <div className="resume-section">
                 <h3 className="semi">
-                  <i class="ri-id-card-line"></i> &nbsp;&nbsp;Certifications:
+                  <strong><i class="ri-id-card-line"></i> &nbsp;&nbsp;Certifications:</strong>
                 </h3>
                 <p className="semi">
                   <strong>Certification Name:</strong>{" "}
@@ -128,10 +134,11 @@ function Resume({ formData, handleDownload }) {
                   {formData.certifications.dateObtained}
                 </p>
               </div>
+              <hr />
               <div className="resume-section">
                 <h2 className="semi">
-                  <i class="ri-add-fill"></i> &nbsp; Additional
-                  Information:
+                 <strong> <i class="ri-add-fill"></i> &nbsp; Additional
+                  Information:</strong>
                 </h2>
                 <p className="semi">
                   <strong>Hobbies:</strong>{" "}

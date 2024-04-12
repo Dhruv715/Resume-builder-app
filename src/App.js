@@ -6,6 +6,7 @@ import LandingPage from "./component/LandingPage";
 import Navbar from "./component/Navbar";
 import { Routes, Route } from "react-router-dom";
 import ParentMain from "./component/ParentMain";
+import ParentMain2 from "./component/ParentMain2";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* At This Time Only one Component and Resume Format Suppperted */}
       <Route path="resumemaker" element={<Choice/>}></Route>
       <Route path="resume1" element={<ParentMain/>}></Route>
+      <Route path="resume2" element={<ParentMain2/>}></Route>
       
       </Routes>
       <Footer />

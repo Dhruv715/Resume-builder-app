@@ -1,17 +1,12 @@
 import React from 'react';
 
-function Form2({ formData, handleChange, handleSubmit,handleImageChange }) {
+function Form2({ formData, handleChange, handleSubmit }) {
   return (
     <>
       <div className='formdata w-full sm:w-full md:w-full lg:w-1/2 bg-gray-800' >
         <h1 className='text-4xl my-2 py-10 text-white px-4 underline'   style={{fontFamily:'poppins'}}>Resume Details Form</h1>
         <form onSubmit={handleSubmit}>
           
-        <h2 className='text-white px-4 py-10 underline' style={{ fontFamily: 'poppins' }}>Resume Images:</h2>
-          <div className='py-3 flex flex-col w-full lg:flex-row justify-items-center items-center'>
-            <label htmlFor="resumeImages" className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>Resume Images:</label>
-            <input type="file" id="resumeImages" accept="image/*" onChange={handleImageChange} multiple className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2' />
-          </div>
           <h2 className='text-white px-4 py-10 underline ' style={{fontFamily:'poppins'}}>Personal Information:</h2>
           <div className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
             <label htmlFor="firstName" className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>First Name:</label>

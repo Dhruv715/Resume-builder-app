@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Form2 from "./Form2";
-import Resume2 from "./Resume2";
 import html2pdf from 'html2pdf.js';
+import Resume2 from "./Resume2";
+import Form2 from "./Form2";
 
 const initialState = {
-    resumeImages: [],
   personalInformation: {
     firstName: '',
     lastName: '',
@@ -45,7 +44,7 @@ const initialState = {
   },
 };
 
-function ParentMain2() {
+function ParentMain() {
   const [formData, setFormData] = useState(initialState);
   const [generatedResume, setGeneratedResume] = useState(null);
 
@@ -63,13 +62,6 @@ function ParentMain2() {
       },
     }));
   };
-  const handleImageChange = (event) => {
-    const files = event.target.files;
-    setFormData(prevState => ({
-      ...prevState,
-      resumeImages: files,
-    }));
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -85,11 +77,10 @@ function ParentMain2() {
 
   return (
     <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col w-full " >
-    <Form2 formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} handleImageChange={handleImageChange} className="w-full sm:w-full md:w-full lg:w-1/2" />
-    <Resume2 formData={generatedResume} handleDownload={handleDownload} className="w-full sm:w-full md:w-full lg:w-1/2" />
-  </div>
+      <Form2 formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} className="w-full sm:w-full md:w-full lg:w-1/2" />
+      <Resume2 formData={generatedResume} handleDownload={handleDownload} className="w-full sm:w-full md:w-full lg:w-1/2"/>
+    </div>
   );
 }
 
-export default ParentMain2;
-
+export default ParentMain;

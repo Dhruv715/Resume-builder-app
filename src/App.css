@@ -11,6 +11,12 @@
   font-size: .9rem;
 }
 
+p{
+  font-size: .9rem;
+}
+strong{
+  font-weight: 600;
+}
 .download-button-container {
   align-self: center;
 }
