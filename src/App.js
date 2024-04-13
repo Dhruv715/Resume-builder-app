@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import ParentMain from "./component/ParentMain";
 import ParentMain2 from "./component/ParentMain2";
 import ParentMain3 from "./component/ParentMain3";
+import ParentMain4 from "./component/ParentMain4";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="resume1" element={<ParentMain/>}></Route>
       <Route path="resume2" element={<ParentMain2/>}></Route>
       <Route path="resume3" element={<ParentMain3/>}></Route>
+      <Route path="resume4" element={<ParentMain4/>}></Route>
       
       </Routes>
       <Footer />

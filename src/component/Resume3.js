@@ -14,9 +14,7 @@ function Resume3({ formData, handleDownload }) {
       {formData && (
         <div className="w-11/12">
           <div id="resumeContent">
-            {/* Personal Information */}
-
-            <div className="parentdivflexy flex flex-row w-full">
+             <div className="parentdivflexy flex flex-row w-full">
               <div className="flex flex-col w-1/3 bg-gray-100">
                 <div className="resume-section">
                 {formData.image && (

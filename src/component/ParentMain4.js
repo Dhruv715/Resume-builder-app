@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import html2pdf from 'html2pdf.js';
-import Form3 from "./Form3";
-import Resume3 from "./Resume3";
+
+import Resume4 from "./Resume4";
+import Form4 from "./Form4";
 
 const initialState = {
   personalInformation: {
@@ -44,7 +45,7 @@ const initialState = {
   },
 };
 
-function ParentMain3() {
+function ParentMain4() {
   const [formData, setFormData] = useState(initialState);
   const [generatedResume, setGeneratedResume] = useState(null);
 
@@ -88,10 +89,10 @@ function ParentMain3() {
 
   return (
     <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col w-full " >
-      <Form3 formData={formData} handleChange={handleChange} handleImageChange={handleImageChange} handleSubmit={handleSubmit} className="w-full sm:w-full md:w-full lg:w-1/2" />
-      <Resume3 formData={generatedResume} handleDownload={handleDownload} className="w-full sm:w-full md:w-full lg:w-1/2"/>
+      <Form4 formData={formData} handleChange={handleChange} handleImageChange={handleImageChange} handleSubmit={handleSubmit} className="w-full sm:w-full md:w-full lg:w-1/2" />
+      <Resume4 formData={generatedResume} handleDownload={handleDownload} className="w-full sm:w-full md:w-full lg:w-1/2"/>
     </div>
   );
 }
 
-export default ParentMain3;
+export default ParentMain4;
