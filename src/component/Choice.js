@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../imgs/Design1.jpg";
 import img1 from "../imgs/Design2.jpg";
+import img2 from "../imgs/Layout4.jpg";
 import { Link } from "react-router-dom";
 
 function Choice() {
@@ -44,6 +45,21 @@ function Choice() {
           </Link>
         </div>
 
+       
+        <div className="box bg-gray-200 rounded-sm shadow-lg p-4 my-4 mx-2 w-full sm:w-1/2 lg:w-1/4 md:w-1/2 hover:shadow-indigo-500/40">
+          <img
+            src={img2}
+            alt="Template 1"
+            className="w-full h-auto mb-4"
+            style={{ maxHeight: "300px", objectFit: "contain" }}
+          />
+          <Link
+            to="/resume3"
+            className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-sm"
+          >
+            Template 3 <i class="ri-arrow-right-line"></i>
+          </Link>
+        </div>
         {/* <div className="box bg-gray-200  rounded-sm shadow-md p-4 my-4 mx-2 w-full sm:w-1/2 lg:w-1/4 md:w-1/2 hover:shadow-indigo-500/40">
           <img
             src={img}

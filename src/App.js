@@ -7,6 +7,7 @@ import Navbar from "./component/Navbar";
 import { Routes, Route } from "react-router-dom";
 import ParentMain from "./component/ParentMain";
 import ParentMain2 from "./component/ParentMain2";
+import ParentMain3 from "./component/ParentMain3";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="resumemaker" element={<Choice/>}></Route>
       <Route path="resume1" element={<ParentMain/>}></Route>
       <Route path="resume2" element={<ParentMain2/>}></Route>
+      <Route path="resume3" element={<ParentMain3/>}></Route>
       
       </Routes>
       <Footer />
