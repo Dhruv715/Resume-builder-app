@@ -60,7 +60,7 @@ function Choice() {
             Template 3 <i class="ri-arrow-right-line"></i>
           </Link>
         </div>
-         <div className="box bg-gray-200  rounded-sm shadow-md p-4 my-4 mx-2 w-full sm:w-1/2 lg:w-1/4 md:w-1/2 hover:shadow-indigo-500/40">
+         {/* <div className="box bg-gray-200  rounded-sm shadow-md p-4 my-4 mx-2 w-full sm:w-1/2 lg:w-1/4 md:w-1/2 hover:shadow-indigo-500/40">
           <img
             src={img}
             alt="Template 1"
@@ -73,7 +73,7 @@ function Choice() {
           >
            Template 4 <i class="ri-arrow-right-line"></i>
           </Link>
-        </div>
+        </div> */}
         
         {/*<div className="box bg-gray-200  rounded-sm shadow-md p-4 my-4 mx-2 w-full sm:w-1/2 lg:w-1/4 md:w-1/2 hover:shadow-indigo-500/40">
           <img
