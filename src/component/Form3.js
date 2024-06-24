@@ -10,7 +10,7 @@ function Form3({ formData, handleChange, handleSubmit ,handleImageChange}) {
           
           <h2 className='text-white px-4 py-2 underline ' style={{fontFamily:'poppins'}}>*Personal Information:</h2>
           <div className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
-            <label htmlFor="firstName" className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>First Name:</label>
+            <label htmlFor="firstName" className='text-white px-4 py-2 me-2 w-full sm:w-full md:w-full lg:w-1/4'>User Image:</label>
             <input type="file" className='w-11/12 mx-auto rounded-sm sm:w-11/12 md:w-11/12 lg:w-full p-2 me-2'  onChange={(e) => handleImageChange(e)} />
           </div>
           <div className='py-3 flex flex-col w-full  lg:flex-row justify-items-center items-center'>
